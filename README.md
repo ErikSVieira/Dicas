@@ -2,10 +2,10 @@
 - Repositório de Dicas e Ferramentas.
 
 ## Comandos
-- [GIT e GITHUB](https://github.com/ErikSVieira/Dicas/blob/main/comandos/dicas_git.md)
-- [HTML](https://github.com/ErikSVieira/Dicas/blob/main/comandos/dicas_html.md)
-- [CSS](https://github.com/ErikSVieira/Dicas/blob/main/comandos/dicas_css.md)
-- [Python](https://github.com/ErikSVieira/Dicas/blob/main/comandos/dicas_python.md)
+- [GIT e GITHUB](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dicas_git.md)
+- [HTML](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dicas_html.md)
+- [CSS](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dicas_css.md)
+- [Python](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dicas_python.md)
 
 ## Lógica de Programação
 - Lógica de programação **GAMEFICADA**
