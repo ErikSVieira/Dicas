@@ -23,6 +23,9 @@
 
     <head></head>
 
+### Titulo
+    <title></title>
+
 ### E dentro da tag body colocamos todo o conteúdo visível ao usuário: textos, imagens, vídeos.
 
     <body></body>
@@ -60,15 +63,27 @@
     <h5></h5>
     <h6></h6>
 
+<h1>Texto H1</h1>
+<h2>Texto H2</h2>
+<h3>Texto H3</h3>
+<h4>Texto H4</h4>
+<h5>Texto H5</h5>
+<h6>Texto H6</h6>
+<br>
+
 ### A web também é feita de imagens e para representá-las temos o elemento img, ele é um daqueles elementos sem tag de fechamento.
 
-O elemento img é bem simples, contendo apenas 2 atributos próprios, o src e o alt.
+### O elemento img é bem simples, contendo apenas 2 atributos próprios, o src e o alt.
 
-O src é obrigatório e guarda o caminho para a imagem que você quer mostrar na página.
+- <img **src**="imagem.jpg" **alt**="Descição da imagem">
 
-O alt não é obrigatório mas é altamente recomendado por melhorar a acessibilidade, ele mostra a descrição da imagem caso ela não carregue e leitores de tela usam esse atributo para descrever a imagem para o usuário saber o que ela significa.
+### O src é obrigatório e guarda o caminho para a imagem que você quer mostrar na página.
 
-    <img></img>
+- **src**="imagem.jpg"
+- **src**="URL"
+
+### O alt não é obrigatório mas é altamente recomendado por melhorar a acessibilidade, ele mostra a descrição da imagem caso ela não carregue e leitores de tela usam esse atributo para descrever a imagem para o usuário saber o que ela significa.
+- **alt**="Descição da imagem"
 
 ###
     <details></details>

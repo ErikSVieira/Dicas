@@ -29,7 +29,8 @@
     $ echo -e 'blob 9\0conteudo' | openssl sha1
 
 ### TREE
-    $
+    $ export tree
+    $ import tree
 
 # Comando para configurar SSH do no seu GIT para Github
 
@@ -52,11 +53,11 @@
 ### Iniciar repositorio / Criar repositorio .git
     $ git init
 
-### Adicionar arquivos para 'commint'
+### Adicionar arquivos para 'commit'
     $ git add
 
 ### Cria arquivos commit para enviar para 'push'
-    $ git commint
+    $ git commit
 
 ### Configurar e-mail do autor para o commit
     $ git config --global user.mail "seu_email@gmail.com"
@@ -73,6 +74,12 @@
 
 ### Verifica os status dos arquivos
     $ git status
+
+### Acessa o histórico da modificações
+    $ git log
+
+### Usado para apresentar as modificações encotradas nos arquivos
+    $ git log -p
 
 ### Verifica os status da configurações do git
     $ git config --list
@@ -91,8 +98,24 @@
 ### Envia arquivos locais para repositorio remoto
     $ git push origin master
 
-### Recebe arquivos remotos no repositorio local 
+### Recebe arquivos remotos no repositorio local. Realiza o merge automaticamente.
+    $ git pull origin
+### or
     $ git pull origin master
+
+### Busca todos os dados do repositório remoto. Não realiza o merge automaticamente.
+    $ git fetch origin
 
 ### Para o Git gerenciar arquivos longos digite
     $ git config –system core.longpaths true
+
+### Reseta para o commit desejado
+    $ git reset --hard be4bd
+
+### Outros codigos
+    $ git checkout master
+    $ git checkout main
+
+    $ git branch main
+
+    $ git rebase main
