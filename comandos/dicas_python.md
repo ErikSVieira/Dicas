@@ -19,7 +19,7 @@
         pip install ––upgrade nome_do_pacote
 
     ### Bibliotecas mais usadas para Data Science
-        Pandas:
+        Pandas: Pandas é  uma biblioteca Python de código aberto para análise de dados. Ele dá ao Python a capacidade de trabalhar com dados tipo planilha, permitindo carregar, manipular alinhar e combnar dados rapidamente, entre outras funções.
         NumPy:
         SciPy:
 
