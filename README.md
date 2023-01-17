@@ -7,9 +7,11 @@
 - [GIT e GITHUB](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dicas_git.md)
 - [HTML](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dicas_html.md)
 - [CSS](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dicas_css.md)
+- [JavaScript](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dicas_js.md)
 - [Laravel](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dica_laravel.md) ****Em breve**
 - [Python/Django](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dicas_python.md)
 - [REST e RESTful](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dica_rest_restfull.md)
+- [SQL](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dica_sql.md)
 
 ## GAMEFICADA
 - Aperenda Lógica de programação e Git brincando
