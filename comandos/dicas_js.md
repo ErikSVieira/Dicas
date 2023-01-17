@@ -101,3 +101,43 @@
         }
 #### Fim da Function        
     }
+
+# Máscaras
+
+### CEP
+    function validarCEP(v) {
+        console.log(v.value);
+        // Removendo os caracteres que não forem números
+        v.value = v.value.replace(/\D/g, "");
+        // Adicionando o hífen na 6ª posição
+        v.value = v.value.replace(/^(\d{5})(\d)/, "$1-$2");
+    }
+
+### Data
+    function validarData(v) {
+        v.value = v.value.replace(/\D/g, "");
+        //Adiciona a barra entre o dia e o mês
+        v.value = v.value.replace(/^(\d{2})(\d)/, "$1/$2");
+        //Adiciona a barra entre o mês e o ano
+        v.value = v.value.replace(/(\d{2})(\d)/, "$1/$2");
+    }
+
+### Telefone
+    function validarTel(v) {
+        v.value = v.value.replace(/\D/g, "");
+        //Adiciona parênteses no DDD
+        v.value = v.value.replace(/^(\d\d)(\d)/g, "($1) $2");
+        //Adiciona hífen no número do telefone
+        v.value = v.value.replace(/(\d{5})(\d)/, "$1-$2");
+    }
+
+### CPF
+    function validarCPF(v) {
+        v.value = v.value.replace(/\D/g, "");
+        //Adiciona ponto após os três primeiros números
+        v.value = v.value.replace(/^(\d{3})(\d)/, "$1.$2");
+        //Adiciona ponto após os seis primeiros números
+        v.value = v.value.replace(/(\d{3})(\d)/, "$1.$2");
+        //Adiciona o hífen antes dos últimos 2 caracteres
+        v.value = v.value.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+    }
