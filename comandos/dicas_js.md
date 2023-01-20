@@ -141,3 +141,74 @@
         //Adiciona o hífen antes dos últimos 2 caracteres
         v.value = v.value.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
     }
+
+# Criando um Cookie em JavaSscript
+### Salva o Cookie
+    function setCookie(nome, valor, expira) {
+        //Cria um objeto da classe data (classe nativa do javascript)
+        dia = new Date();
+        //Adiciona a quantidade de dias que o cookie estará válido à data atual
+        dia.setDate(dia.getDate() + expira);
+        //Prepara a string que armazenará o cookie
+        var valor = escape(valor) + ((expira === null) ? "" : "; expires=" + dia.toUTCString());
+        //Adiciona a string ao cookie
+        document.cookie = nome + "=" + valor;
+    }
+
+### Verifica se  o Cookie já está salvo
+    function getCookie(nome) {
+        //Obtém a string com os cookies
+        var cookies = document.cookie;
+        //Localiza onde está o cookie cujo nome foi passado por parâmetro
+        var inicio = cookies.indexOf(" " + nome + "=");
+        //Se estiver no início
+        if (inicio === -1) {
+            //Posiciona no início do cookie
+            inicio = cookies.indexOf(nome + "=");
+        }
+        //Ou se não foi localizado (não existe)
+        if (inicio === -1) {
+            cookies = null;
+        } else {
+            //Localiza a posição inicial onde está o valor do cookie
+            inicio = cookies.indexOf("=", inicio) + 1;
+            //Localiza a posição final onde está o valor do cookie
+            var fim = cookies.indexof(";", inicio);
+            if (fim === -1) {
+                fim = cookies.length;
+            }
+            //Enfim, obtém o valor do cookie
+            cookies = unescape(cookies.substring(inicio, fim));
+        }
+        //Retorna o valor
+        return cookies;
+    }
+
+### Deve se validar alguns campos antes de criar o cookie
+    function validarForm(form) {
+        // Pode ter uma expressão regular para verificar se o email é válido (mantenha a expressão em uma linha única e contínua)
+        erEmail = /^[\w!#$%&'*+\/=?^`{|}~-]+(\.[\w!#$%&'*+\/=?^`{|}~-]+)*@(([\w-]+\.)+[A-Za-z]{2,6}|\[\d{1,3}(\.\d{1,3}){3}\])$/;
+        
+        // Verifica se o campo está vazio ou não corresponde ao email válido
+
+        // Verifica se a senha está correta com banco de dados
+        if (form.senha.value !== "senha_do_DB") {
+            alert("Preencha o campo SENHA corretamente");
+            return false;
+        }
+        // Verifica se a opção de manter conectado foi selecionada
+        if (form.conectado.checked) {
+            // Em caso afirmativo, cria um cookie com o email do usuário
+            setCookie("email", form.email.value, 1);
+        }
+        return true;
+    }
+
+### Também ao carregar a página, verificamos se o usuário já acessou o site anteriormente e optou por mantê-lo conectado.
+    function verificarLogado() {
+        // Verifica a existência do login
+        if (getCookie("email") !== null) {
+            // Em caso afirmativo, direciona para a página restrita
+            window.location.href = "pagina_de_acesso.html";
+        }
+    }
