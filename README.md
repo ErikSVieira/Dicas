@@ -3,12 +3,12 @@
 - A ideia deste repositorio foi trazer todas minhas anotações de estudos, de quando estava estudando e que estou estudando. Vou trazer informações de varias linguaguens de marcação e programação, como montar servidores Linux e usar como um servidor SQL, PHP e Web Service local. Com isso vou trazer diversos comandos e passos de como usa-lós. 
 
 ## Comandos
-- [Linux](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dica_linux.md) ****Em breve**
+- [Linux](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dica_linux.md)
 - [GIT e GITHUB](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dicas_git.md)
 - [HTML](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dicas_html.md)
 - [CSS](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dicas_css.md)
 - [JavaScript](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dicas_js.md)
-- [Laravel](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dica_laravel.md) ****Em breve**
+- [Laravel](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dica_laravel.md)
 - [Python/Django](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dicas_python.md)
 - [REST e RESTful](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dica_rest_restfull.md)
 - [SQL](https://github.com/ErikSVieira/Dicas/blob/master/comandos/dica_sql.md)
