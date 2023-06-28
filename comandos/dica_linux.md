@@ -73,24 +73,32 @@ Pronto! Com a instalação do LAMP no Linux, sempre que precisar, você já pode
 
 # 
 ## Squid
+****Em breve**
 
 # 
 ## LDAP
+****Em breve**
 
 #
 ## Samba
+****Em breve**
 
 #
 ## GLPi
+****Em breve**
 
 # 
 ## Bacula
+****Em breve**
 
 #
 ## Iptables
+****Em breve**
 
 #
 ## DHCP
+****Em breve**
 
 #
 ## DNS
+****Em breve**
